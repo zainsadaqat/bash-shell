@@ -5,8 +5,19 @@ This roadmap is designed to take you from a complete beginner to proficient in S
 ---
 
 ## 1. Introduction to Shell / Bash
-*   **What is Bash?**
-*   **CLI vs GUI:** Understanding the command-line interface versus graphical user interfaces.
+### **What is Bash?**
+
+Bash is a scripting language with its own syntax, variables, conditionals (if-else), loops (for, while), and functions.
+
+It allows users to write scripts to automate tasks and perform complex operations, similar to other programming languages.
+
+While it may lack some advanced features of higher-level languages like object-oriented programming, its capabilities are sufficient for system administration, automation, and general scripting within Unix-like environments.
+
+### **CLI vs GUI:** Understanding the command-line interface versus graphical user interfaces.
+
+- CLI: Text-based, requiring users to type commands and arguments into a terminal or console.
+- GLI: Visual-based, allowing users to interact with elements like icons, menus, and windows using a pointing device.
+
 *   **What is scripting?**
 
 ## 2. Popular Shells
@@ -49,7 +60,13 @@ The cd command supports several useful options for navigating directories:
 - `rm`: Remove files or directories
 - `rmdir`: Remove empty directories
 - `mv`: Move or rename files
-- `cp`: Copy files and directories
+
+#### `cp`: Copy files and directories
+
+The cp command is used to copy files and directories from one location to another
+
+It's like making a duplicate of your file or folder.
+
 #### `cat`: Concatenate and display file content
 
 The cat command is used to show the content of files in the terminal.
