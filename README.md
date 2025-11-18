@@ -29,7 +29,11 @@ This roadmap is designed to take you from a complete beginner to proficient in S
 Navigate between dirs: Tips for efficient directory traversal
 
 
-`pwd`: Print Working Directory
+#### `pwd`: Print Working Directory
+Knowing which folder you're in is important when moving around the filesystem. It helps you make sure you're in the right place when running commands that use relative paths.
+
+
+
 #### `cd`: Change Directory
 
 The cd command supports several useful options for navigating directories:
@@ -39,15 +43,35 @@ The cd command supports several useful options for navigating directories:
 - cd -: Switch to the previous directory
 - cd /: Change to the root directory
 
-`echo`: Display text or variables
-`mkdir`: Make Directory
-`touch`: Create empty files or update timestamps
-`rm`: Remove files or directories
-`rmdir`: Remove empty directories
-`mv`: Move or rename files
-`cp`: Copy files and directories
-`cat`: Concatenate and display file content
-`find`: Search for files in a directory hierarchy
+- `echo`: Display text or variables
+- `mkdir`: Make Directory
+- `touch`: Create empty files or update timestamps
+- `rm`: Remove files or directories
+- `rmdir`: Remove empty directories
+- `mv`: Move or rename files
+- `cp`: Copy files and directories
+#### `cat`: Concatenate and display file content
+
+The cat command is used to show the content of files in the terminal.
+
+You can also use it to combine multiple files into one.
+
+The cat command has options to change how it shows text:
+
+The cat command can be used to concatenate multiple files into one.
+
+This is useful for combining files or appending content to an existing file.
+
+```sh
+cat file1.txt file2.txt > combined.txt
+```
+
+-n - Add numbers to each line
+-b - Add numbers only to lines with text
+-s - Remove extra empty lines
+-v - Show non-printing characters (except for tabs and end of line)
+
+- `find`: Search for files in a directory hierarchy
     
  
 
