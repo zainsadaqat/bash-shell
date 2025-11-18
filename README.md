@@ -29,17 +29,25 @@ This roadmap is designed to take you from a complete beginner to proficient in S
 Navigate between dirs: Tips for efficient directory traversal
 
 
-    *   `pwd`: Print Working Directory
-    *   `cd`: Change Directory
-    *   `echo`: Display text or variables
-    *   `mkdir`: Make Directory
-    *   `touch`: Create empty files or update timestamps
-    *   `rm`: Remove files or directories
-    *   `rmdir`: Remove empty directories
-    *   `mv`: Move or rename files
-    *   `cp`: Copy files and directories
-    *   `cat`: Concatenate and display file content
-    *   `find`: Search for files in a directory hierarchy
+`pwd`: Print Working Directory
+#### `cd`: Change Directory
+
+The cd command supports several useful options for navigating directories:
+
+- cd ..: Move up one directory level
+- cd ~: Change to the home directory
+- cd -: Switch to the previous directory
+- cd /: Change to the root directory
+
+`echo`: Display text or variables
+`mkdir`: Make Directory
+`touch`: Create empty files or update timestamps
+`rm`: Remove files or directories
+`rmdir`: Remove empty directories
+`mv`: Move or rename files
+`cp`: Copy files and directories
+`cat`: Concatenate and display file content
+`find`: Search for files in a directory hierarchy
     
  
 
