@@ -204,8 +204,21 @@ You can also combine multiple options without a space between them. For example,
     *   Process substitution (`<(command)`)
 
 ## 5. Working with Text
-*   **View & Search:**
-    *   `grep`: Search for patterns in files.
+### **View & Search:**
+#### `grep`: Search for patterns in files.
+
+The grep command is used to search for text patterns within files.
+
+It's a powerful way to find specific text in large files or across many files.
+
+To search for a pattern in a file, use grep 'pattern' filename
+
+The grep command has options to change how it works:
+
+- -i - Search ignoring case differences (uppercase or lowercase)
+- -r - Search through all files in a directory and its subdirectories
+- -v - Find lines that do not match the pattern
+
     *   `less`, `more`: View file content page by page.
     *   `head`, `tail`: View the beginning or end of files.
     *   `find`: (Also used for text searching within files)
