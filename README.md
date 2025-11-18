@@ -23,11 +23,13 @@ This roadmap is designed to take you from a complete beginner to proficient in S
 *   Get your environment ready to start scripting.
 
 ## 4. Shell Fundamentals
-*   **Files & Directories:** Core commands for navigating and managing files.
+
+### **Files & Directories:** Core commands for navigating and managing files.
+
+Navigate between dirs: Tips for efficient directory traversal
+
+
     *   `pwd`: Print Working Directory
-### `ls`: List directory contents
-- The `ls` command is used to list the contents of a directory.
-- The `ls` command can display files, directories, and information about them.
     *   `cd`: Change Directory
     *   `echo`: Display text or variables
     *   `mkdir`: Make Directory
@@ -38,7 +40,106 @@ This roadmap is designed to take you from a complete beginner to proficient in S
     *   `cp`: Copy files and directories
     *   `cat`: Concatenate and display file content
     *   `find`: Search for files in a directory hierarchy
-    *   Navigate between dirs: Tips for efficient directory traversal
+    
+ 
+
+
+### `ls`: List directory contents
+- The `ls` command is used to list the contents of a directory.
+- The `ls` command can display files, directories, and information about them.
+
+### ls Parameter Options
+The `ls` command has a variety of options to customize its output:
+
+#### `-l` - Long listing format
+
+The -l option gives you detailed information about files and folders.
+
+It displays information such as:
+
+- file permissions
+- number of links
+- owner name
+- owner group
+- file size
+- time of last modification
+- file or directory name
+
+```sh
+-rw-r--r--  1 zain  staff  20 Nov 10 10:25 hello.sh
+```
+- The letters after the first character show who can read or write the file. Think of them as permission tags.
+- The number one is the link count.
+- zain is the owner.
+- staff is the group.
+- twenty is the size of the file in bytes.
+- Then the date and time the file was last changed.
+- hello.sh is the file name.
+
+#### `-a` - Include hidden files
+
+Hidden files in Unix/Linux systems start with a dot (e.g., `.configts.json`).
+
+This option is helpful when you need to view or manage configuration files that are not visible by default.
+
+#### `-h` - Human-readable sizes
+
+The -h option makes file sizes easier to read by converting byte counts into kilobytes (K), megabytes (M), gigabytes (G), etc.
+
+This option is particularly useful when you want to quickly assess the size of files and directories without manually converting bytes.
+
+```sh
+ls -lh
+```
+#### -t - Sort by modification time
+
+The -t option sorts files and directories by modification time, with the most recently modified files first.
+
+This option is useful when you want to see the most recently updated files first.
+
+#### -r - Reverse order while sorting
+
+The -r option reverses the order of the sort.
+
+When used in combination with other options like -t, it can display the oldest files first.
+
+This option is useful for reversing the default sorting behavior to meet specific needs
+
+#### -R - List subdirectories recursively
+
+The -R option lists directories and their contents recursively.
+
+This is useful for viewing the entire directory tree.
+
+#### -S - Sort by file size
+
+The -S option sorts files by size, with the largest files first.
+
+This is helpful for quickly identifying large files in a directory.
+
+#### -1 - List one file per line
+
+The -1 option lists one file per line, which is useful for scripts or when piping output to other commands.
+
+#### -d - List directories themselves, not their contents
+
+The -d option lists directories themselves rather than their contents.
+
+This is useful for seeing directory names without contents.
+
+#### -F - Append indicator (one of */=@|) to entries
+
+The -F option appends an indicator character to entries (e.g., / for directories, * for executables).
+
+#### Combine Multiple Options
+
+You can combine multiple options to create more complex commands.
+
+For example, `ls -l -a` will display a detailed listing of all files and directories, including hidden files.
+
+You can also combine multiple options without a space between them. For example, ls -la
+
+
 *   **Tab Completion:** Speed up your typing and reduce errors.
 *   **Repeat Commands:** Efficiently re-run previous commands.
 *   **Help Commands:** Learn how to get help for any command (`man`, `help`).
