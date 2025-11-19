@@ -272,10 +272,43 @@ The grep command has options to change how it works:
 
 ## 12. Bash Operators
 *   **Arithmetic:** Perform calculations.
-*   **Comparison:** Compare values.
-*   **String operators:** Work with strings.
-*   **Logical:** Combine conditions (`&&`, `||`, `!`).
-*   **File test:** Check file attributes (existence, permissions, type).
+### **Comparison:** Compare values.
+
+- -eq: Equal to
+- -ne: Not equal to
+- -lt: Less than
+- -le: Less than or equal to
+- -gt: Greater than
+- -ge: Greater than or equal to
+
+
+### **String operators:** Work with strings.
+
+- =: Equal to
+- !=: Not equal to
+- <: Less than, in ASCII alphabetical order
+- >: Greater than, in ASCII alphabetical order
+
+### **Logical:** Combine conditions (`&&`, `||`, `!`).
+
+- &&: Logical AND
+- ||: Logical OR
+- !: Logical NOT
+
+### **Arithmetic Operators**
+- +: Addition
+- -: Subtraction
+- *: Multiplication
+- /: Division
+- %: Modulus (remainder of division)
+- For exponentiation, use external tools like bc or awk.
+
+### **File test:** Check file attributes (existence, permissions, type).
+
+- -e: Checks if a file exists
+- -d: Checks if a directory exists
+- -f: Checks if a file is a regular file
+- -s: Checks if a file is not empty
 
 ## 13. Input/Output
 *   **Read user input:** Get input from the user (`read`).
