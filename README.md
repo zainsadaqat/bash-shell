@@ -56,16 +56,76 @@ The cd command supports several useful options for navigating directories:
 
 - `echo`: Display text or variables
 - `mkdir`: Make Directory
-- `touch`: Create empty files or update timestamps
-- `rm`: Remove files or directories
+#### `touch`: Create empty files or update timestamps
+
+The touch command is used to change file timestamps or create an empty file if it doesn't exist.
+
+It's often used to create placeholder files or update timestamps for build systems.
+
+The touch command has options to change how it works:
+
+- -a - Update only when the file was last read
+- -m - Update only when the file was last changed
+- -t - Set the timestamp to a specific time
+- -c - Do not create any files
+
+#### `rm`: Remove files or directories
+
+The rm command is used to remove files or directories.
+
+Be careful, as removed files cannot be easily recovered.
+
+The rm command has options to change how it works:
+
+- -r - Delete a folder and everything inside it
+- -i - Ask before deleting each file
+- -f - Force delete without asking
+- -v - Verbose mode, show files being removed
+
 - `rmdir`: Remove empty directories
-- `mv`: Move or rename files
+
+#### `mv`: Move or rename files
+
+The mv command is used to move or rename files and directories.
+
+It's like changing where a file is or what it's called.
+
+To move a file, use mv source_file destination_directory.
+
+```sh
+mv my_file.txt /path/to/destination/
+```
+
+The mv command has several options to customize its behavior:
+
+- -i - Ask before replacing files
+- -u - Move only if the source is newer
+- -v - Verbose mode, show files being moved
+
+Wildcards allow you to move multiple files at once. For example, mv *.txt /destination/ will move all text files to the destination folder.
+
+```sh
+mv *.txt images/
+```
 
 #### `cp`: Copy files and directories
 
 The cp command is used to copy files and directories from one location to another
 
 It's like making a duplicate of your file or folder.
+
+```sh
+cp source_file.txt destination_file.txt
+```
+
+Wildcards allow you to copy multiple files at once. For example, cp *.txt /destination/ will copy all text files to the destination folder.
+
+The cp command has options to change how it works:
+
+- -r - Copy all files and folders inside a directory
+- -i - Ask before replacing files
+- -u - Copy only if the source is newer
+- -v - Verbose mode, show files being copied
 
 #### `cat`: Concatenate and display file content
 
@@ -115,6 +175,7 @@ It displays information such as:
 ```sh
 -rw-r--r--  1 zain  staff  20 Nov 10 10:25 hello.sh
 ```
+
 - The letters after the first character show who can read or write the file. Think of them as permission tags.
 - The number one is the link count.
 - zain is the owner.
