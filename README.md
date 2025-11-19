@@ -83,16 +83,14 @@ This is useful for combining files or appending content to an existing file.
 cat file1.txt file2.txt > combined.txt
 ```
 
--n - Add numbers to each line
--b - Add numbers only to lines with text
--s - Remove extra empty lines
--v - Show non-printing characters (except for tabs and end of line)
+- -n - Add numbers to each line
+- -b - Add numbers only to lines with text
+- -s - Remove extra empty lines
+- -v - Show non-printing characters (except for tabs and end of line)
 
-- `find`: Search for files in a directory hierarchy
+#### `find`: Search for files in a directory hierarchy
     
  
-
-
 ### `ls`: List directory contents
 - The `ls` command is used to list the contents of a directory.
 - The `ls` command can display files, directories, and information about them.
