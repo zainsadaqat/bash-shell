@@ -330,7 +330,7 @@ The grep command has options to change how it works:
 *   How to add comments (`#`) to your scripts for readability.
 
 ## 12. Bash Operators
-*   **Arithmetic:** Perform calculations.
+
 ### **Comparison:** Compare values.
 
 - -eq: Equal to
@@ -350,11 +350,18 @@ The grep command has options to change how it works:
 
 ### **Logical:** Combine conditions (`&&`, `||`, `!`).
 
+- AND → -a or &&
+
+- OR → -o or ||
+
+- NOT → !
+
 - &&: Logical AND
 - ||: Logical OR
 - !: Logical NOT
 
-### **Arithmetic Operators**
+### **Arithmetic Operators** performs calculations
+
 - +: Addition
 - -: Subtraction
 - *: Multiplication
